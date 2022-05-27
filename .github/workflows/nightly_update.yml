@@ -17,7 +17,8 @@ concurrency:
 
 
 jobs:
-  nightly_docs_build:
+  team_update:
+    name: Update the ansys/all-members team
     runs-on: ubuntu-latest
 
     steps:
