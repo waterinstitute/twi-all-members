@@ -23,8 +23,8 @@ myOrg = "ansys"
 if myPAT is None:
     # This probably means that we are updating the team automatically using our
     # GitHub action: Team Update... let us read the GitHub Token
-    print("Reading access token from 'token' envirionment variable...")
-    myPAT = os.environ.get("token")
+    print("Reading access token from 'TOKEN' envirionment variable...")
+    myPAT = os.environ.get("TOKEN")
 
 # Create a connection to GitHub
 g = github.Github(myPAT)
