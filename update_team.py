@@ -1,4 +1,4 @@
-"""Script for automatically updating the ansys/all-members GitHub team
+"""Script for automatically updating the waterinstitue/twi GitHub team
 from the ansys Organization. This team basically includes all members
 within the organization."""
 
@@ -18,7 +18,7 @@ import github
 MY_PAT = None
 
 # Select the org you want to access
-MY_ORG = "ansys"
+MY_ORG = "waterinstitute"
 
 # =============================================================================
 # MODIFY WITH CAUTION FROM THIS POINT ONWARDS
@@ -47,7 +47,7 @@ g_org_members = g_org.get_members()
 print(f"Retrieving members... Total count: {g_org_members.totalCount}")
 
 # Now, let us get the users of our all-members team
-g_team = g_org.get_team_by_slug("all-members")
+g_team = g_org.get_team_by_slug("twi")
 g_team_members = g_team.get_members()
 print(
     "Retrieving the 'all-members' team members... "
