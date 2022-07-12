@@ -20,6 +20,7 @@ jobs:
     name: Style Check
     if: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - uses: actions/checkout@v2
 
